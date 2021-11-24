@@ -1,0 +1,41 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+
+    &__box {
+        font-weight: $fw-bold;
+
+        .menu__projects{
+            text-decoration: none;
+            color: $textc-blk;
+            margin-right: 2vw;;
+        }
+
+        .menu__contact{
+            text-decoration: none;
+            color: $textc-blk;
+        }
+    }
+}
+
+
+a {
+    cursor: pointer;
+    position: relative;
+    min-width: max-content;
+}
+a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    box-shadow: 0 .5rem 1rem -.25em rgba(0,0,0,.3 );
+    transition: opacity 1s ease;
+}
+a:hover::after {
+    opacity: 1;
+}

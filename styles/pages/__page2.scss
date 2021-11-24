@@ -1,0 +1,72 @@
+.page2 {
+    display: flex;
+    justify-content: center;
+    font-family: $ff;
+    font-weight: $fw-norm;
+    font-style: $fstyle-norm;
+    font-size: $fs-small;
+    color: $textc-blk;
+
+    .home {
+        width: $mywidth;
+
+        .section {
+            margin: 15vh 0 7vh 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .section__projects {
+
+                .projects__headd {
+                    font-size: $fs-mega;
+                    font-weight: $fw-bold;
+                }
+
+                .projects__paragraph {
+                    font-size: $fs-tiny;
+                    line-height: 26px;
+                }
+
+            }
+        }
+
+        .acomplishments {
+
+            .row {
+                display: flex;
+                flex-direction: row;
+                height: 40px;
+
+                .p-first {
+                    font-weight: $fw-bold;
+                    opacity: $opacity;
+                    position: absolute;
+                }
+
+                .p-second {
+                    margin-left: 7vw;
+                    font-weight: $fw-bold;
+
+                }
+            }
+        }
+
+        .second-section {
+
+            .section-paragraph {
+                line-height: 26px;
+                font-size: $fs-tiny;
+                margin: 3vh 0 3vh 0;
+            }
+
+            .image-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 5vh;
+            }
+        }
+    }
+
+}

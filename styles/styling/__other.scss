@@ -1,0 +1,27 @@
+span {
+    color: $textc-blue;
+    
+}
+
+.home {
+    width: $mywidth;
+}
+
+hr.quote__solid {
+    border-top: 1px solid #111111;
+    width: 20px;
+    margin-bottom: -12px;
+    margin-left: 1px;
+    opacity: $opacity;
+}
+
+hr.awards__solid {
+    border-top: 1px solid #111111;
+    opacity: $opacity;
+    margin: 5vh 0 5vh 0;
+}
+
+hr.acomplishments__solid {
+    border-top: 1px solid #111111;
+    opacity: 30%;
+}

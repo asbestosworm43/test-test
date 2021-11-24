@@ -1,0 +1,62 @@
+.page3 {
+    display: flex;
+    justify-content: center;
+    font-family: $ff;
+    font-weight: $fw-norm;
+    font-style: $fstyle-norm;
+    font-size: $fs-small;
+    color: $textc-blk;
+
+    .home {
+        width: $mywidth;
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 15vh 0 15vh 0;
+
+            .contact__head {
+                font-weight: $fw-bold;
+                font-size: $fs-mega;
+                margin-bottom: 3vh;
+            }
+
+            .contact__paragraph {
+                font-size: $fs-tiny;
+            }
+
+            .form-box {
+                width: 500px;
+
+                form, label:focus {
+                    opacity: 1;
+                }
+                
+                .form-bar {
+                    width: 100%;
+                    margin: 0 2vh 2vh 0;
+                    padding: 2vh 0 2vh 0;
+                    display: flex;
+                    flex-direction: column;
+                    border: none;
+                    border-bottom: 1px solid rgba($color: #000000, $alpha: .6);
+                    border-radius: 0;
+                }
+
+                .btn {
+                    margin-top: 1.5vh;
+                    cursor: pointer;
+                    width: 125px;
+                    height: 50px;
+                    background-color: blue;
+                    color: white;
+                }
+            }
+        }
+
+        .map {
+            margin: 0 0 5vh 0;
+        }
+    }
+}

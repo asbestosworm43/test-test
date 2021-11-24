@@ -1,0 +1,118 @@
+.page1 {
+    display: flex;
+    justify-content: center;
+    font-family: $ff;
+    font-weight: $fw-norm;
+    font-style: $fstyle-norm;
+    font-size: $fs-small;
+    color: $textc-blk;
+
+    .title-n-quote {
+        display: flex;
+        flex-direction: row;
+        margin: 15vh 0 15vh 0;
+    }
+    .title {
+        font-weight: $fw-bold;
+    
+        .headder {
+            color: $textc-blue;
+            text-decoration: none;
+        }
+        &__paragraph {
+            font-size: $fs-mega;
+        }
+    }
+
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-left: 13vw;
+        font-style: $fstyle-italic;
+    
+        &__paragraph {
+            font-size: $fs-tiny;
+            opacity: $opacity;
+        }
+    }
+
+    .group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        &__paragraph {
+            font-size: $fs-big;
+        }
+    
+        &__links {
+            padding: 5vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 7.5px;
+            
+            .group__link {
+                text-decoration: none;
+                color: $textc-blk;
+                opacity: $opacity;
+                font-weight: $fw-bold;
+            }
+            .group__link1 {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            .group__link2 {
+                grid-column: 1;
+                grid-row: 2;
+            }
+            .group__link3 {
+                grid-column: 1;
+                grid-row: 3;
+            }
+            .group__link4 {
+                grid-column: 2;
+                grid-row: 1;
+            }
+            .group__link5 {
+                grid-column: 2;
+                grid-row: 2;
+            }
+            .group__link6 {
+                grid-column: 2;
+                grid-row: 3;
+            }
+        }
+    }
+    
+    .awards {
+
+        &__grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+    
+            .awards__head {
+                font-weight: $fw-bold;
+            }
+            .awards__title {
+                margin-bottom: 42px;
+                font-weight: $fw-bold;
+            }
+            .awards__text {
+                opacity: $opacity;
+            }
+            .awards__year{
+                margin-bottom: 1px;
+                font-weight: $fw-bold;
+            }
+    
+        }
+    }
+    .awards__col__year {
+        justify-self: end;
+    }
+}
